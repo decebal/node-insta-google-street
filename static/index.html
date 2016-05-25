@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/"
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Instant Google Street View</title>
+   
+           <meta name="description" content="Instantly see a Google Street View of any supported location. Easily share and save your favourite views.">
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no" />
+    
+
+
+    <link href="/css/bootstrap.min.css?v=0" rel="stylesheet">
+    <link href="/css/screen.css?v=9" rel="stylesheet">
+    
+    
+    <script type="text/javascript">
+      
+      var _gaq = _gaq || [];
+      var isTouch = "ontouchstart" in window;
+      var isSoftKeyboard = false;
+      
+      function getStyle(el, cssprop){
+      
+         if (!el) return false;
+      
+       if (el.currentStyle) //IE
+        return el.currentStyle[cssprop]
+       else if (document.defaultView && document.defaultView.getComputedStyle) //Firefox
+        return document.defaultView.getComputedStyle(el, "")[cssprop]
+       else //try and get inline style
+        return el.style[cssprop]
+      }
+      
+    </script>
+  
+    
+        
+  </head>
+
+  <body>
+   <div id="media-width"></div>
+   
+   <script>var mediaWidth = parseInt(getStyle(document.getElementById('media-width'),'maxWidth'));</script>
+   
+   
+    
+    <div class="container" id="container">
+    
+    <div id="blocker"></div>
+    
+    <div id="bginfo-box">
+      <div id="bgcontrols">
+         <a title="Previous view" class="bgcontrol" id="bgback" href="javascript:void(0)"></a>
+         <a title="Next view" class="bgcontrol" id="bgforward" href="javascript:void(0)"></a>
+          <a title="Full screen" class="bgcontrol" id="bgfull" href="javascript:void(0)"></a>
+      </div>
+      <div id="bginfo-text"></div>
+    </div>
+    
+    <div id="headline">
+      <h1><i>Instant</i> Street View</h1> 
+    </div>
+    
+    <div id="search-box" class="initial">
+          <form id="form">
+               <input id="search" class="form-control initial" type="text" autocomplete="off" placeholder="Type an address..." />
+               <div id="search-clear" class="initial" title="Clear">×</div>               
+          </form>
+          
+      <div id="actions-box" class="btn-toolbar initial">
+       <button id="globe-button" class="btn" title="Switch to map view [M]" data-title=""><i class="icon-globe"></i></button>
+       <button id="road-button" class="btn" title="Switch to street view [M]" data-title="" data-disabled-title="Street View unavailable here"><i class="icon-road"></i></button>
+       <button id="random-button" class="btn" title="Random Street View from the current map" data-title="" data-disabled-title="Street View unavailable here" data-busy-title="Looking for a random Street View..."><i class="icon-random"></i></button>
+       <button id="share-button" class="btn" title="Share this view"><i class="icon-share"></i></button>
+       
+       </div>
+          
+    </div>
+    
+
+      
+    
+   
+    
+      <div id="pano-box" class="initial">
+         <div id="pano" class="initial"></div>
+      </div>
+      
+
+      <div id="map-box">
+         <div id="map"></div>
+        
+      </div>
+      
+       <div id="maparrow" title="Toggle the minimap" class="down"></div>
+      
+      <div id="no-location">
+         Location not found.
+      </div>
+      
+            
+               
+      </div> <!-- /container -->
+     
+                      
+       
+          
+    
+    
+                
+         
+      
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/extras.js?v=4"></script>
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?libraries=places&v=3.24&client=gme-instantstreetviewcom"></script>
+    
+    <script type="text/javascript" src="/js/main.min.js?v=2xs"></script>
+    
+    <script type="text/javascript" src="/js/bootstrap.min.js?v=1e"></script>
+      
+           
+          
+    <script type="text/javascript">
+      
+            
+            
+      window.postAddress = 1;
+      
+      window.bgData = [["-18.417405,-69.951846,21.89,-8.05,0","xwOQuRVZ6l7J28UXpoZruw","Chaquire, Tarapaca, Chile"],["47.69392,106.982045,75.391,-0.516,0","GCpD9StxrWMBshWUzzyKXw","Unnamed Road, Zuunmod, Mongolia"],["-5.336082,72.268144,476.068,-4.893,0","TJp4J3oM9Ax_LNtbe0gqGg","British Indian Ocean Territory"],["27.884727,86.73597,171.787,-10.219,-1","vkocOTh9HdChnPb4pvNSSQ","Unnamed Road, Khumjung 56000, Nepal"],["19.440413,-100.268905,-209.04,-6.23,0","DvuYT7Ny7wrLTB7VZ9Jldg","M\u00e9xico 15, Michoac\u00e1n, Mexico"],["69.774616,19.269995,-14367.677,-15.255,-1","PDM0-29kGmYSOV_7xcC10Q","Fv53 470, 9022 Krokelvdalen, Norway"],["-19.699677,-69.688164,790.77,1.393,0","7jPTFYaiP2Bs2V7JgBVa_w","Cura, Tarapaca, Chile"],["-6.379439,71.238395,-152.389,3.178,0","kV1AFwSCQn1Wdb0MPVgnVQ","British Indian Ocean Territory"],["46.990756,8.53652,-2671.507,-23.642,-1","-ZebgBtdJk2ZJFMXNPmmsQ","Schattenhalbstrasse, 6442 Gersau, Switzerland"],["-21.203982,-159.837008,1433.56,3.73,0","iLA4lrmEEKgAAAQo8BVSfg","Ara Tapu, Arorangi District, Cook Islands"]];
+      
+      
+      
+    </script>
+     
+  </body>
+</html>

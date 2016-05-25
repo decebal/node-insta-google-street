@@ -1,0 +1,19 @@
+{
+  "name": "statis_insta_street_view",
+  "version": "1.0.0",
+  "description": "identifying contrails",
+  "main": "static.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node static.js"
+  },
+  "dependencies": {
+    "finalhandler": "^0.4.1",
+    "googleapis": "^7.1.0",
+    "http": "0.0.0",
+    "serve-static": "^1.10.2"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
