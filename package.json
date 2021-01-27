@@ -8,7 +8,7 @@
     "start": "node static.js"
   },
   "dependencies": {
-    "finalhandler": "^0.4.1",
+    "finalhandler": "^0.5.0",
     "googleapis": "^67.0.0",
     "http": "0.0.0",
     "serve-static": "^1.10.2"
